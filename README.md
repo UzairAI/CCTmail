@@ -1,6 +1,13 @@
 # CCTmail
 An email system prototype built using PHP, MySQL, HTML, CSS, JavaScript and hosted on WAMP/LAMP server.
 
+![image](https://user-images.githubusercontent.com/69196090/204139090-528cc007-57ef-48cb-8907-dea79ac80d9e.png)  
+  
+![image](https://user-images.githubusercontent.com/69196090/204139142-5880bc0e-8470-43cf-9e8a-5a7e9d632f44.png)  
+
+
+
+
 # How to run the application?
 
 **1.** Download and Install WAMP (for Windows) or LAMP (for Linux) server on your system.  

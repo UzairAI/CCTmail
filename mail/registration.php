@@ -11,7 +11,7 @@ $email = $user.'@cctmail.com';
 
 $s = " select * from userdata where user = '$user'";
 
-$result = mysqli_query($conn, $s);
+$result = mysqli_query($con, $s);
 
 $num = mysqli_num_rows($result);
 
@@ -26,7 +26,7 @@ if($num == 1){
 	;}
 else{
 	$reg= " insert into userdata(name, user, password, email) values ('$name' , '$user' , '$pass' , '$email')";
-	mysqli_query($conn, $reg);
+	mysqli_query($con, $reg);
 	?><html>
 	<script>
             alert("Registration Successful. \n " +
@@ -48,7 +48,7 @@ $sql = "CREATE TABLE $user (
 	timestamp TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
         )";
 
-if (mysqli_query($conn, $sql)) {
+if (mysqli_query($con, $sql)) {
     $reg = " insert into $user(inbox, sender, receiver, subject, body) values ('yes', 'admin@cctmail.com' , '$email' , 'Welcome to CCTmail' , 'Hello $name, 
 
 																		Thank you for registering at CCTmail. 
@@ -57,9 +57,9 @@ if (mysqli_query($conn, $sql)) {
 
 																		Regards,
 																		CCTmail Team.')";
-    mysqli_query($conn, $reg);
+    mysqli_query($con, $reg);
 } else {
-    echo "Error creating table: " . mysqli_error($conn);
+    echo "Error creating table: " . mysqli_error($con);
 }
-mysqli_close($conn);
+mysqli_close($con);
 ?>

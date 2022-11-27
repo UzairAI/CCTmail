@@ -11,7 +11,7 @@ An email system prototype built using PHP, MySQL, HTML, CSS, JavaScript and host
 **6.** Create a new table with the following configurations:  
                       
                     +------------+----------+----------+--------+-------------+
-                    | **Name**   | **Type** | **Size** |**NULL**| **Default** |
+                    | Name       | Type     | Size     | NULL   | Default     |
                     +------------+----------+----------+--------+-------------+
                     | name       | VARCHAR  | 32       | No     | None        |
                     +------------+----------+----------+--------+-------------+

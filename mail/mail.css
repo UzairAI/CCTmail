@@ -1,0 +1,260 @@
+*{
+	margin: 0;
+	padding: 0;
+	font-family: sans-serif;
+}
+.header{
+	top: 0;
+	height: 10vh;
+	width: 100%;
+	background: #0078d4;
+	position: absolute;
+}
+.background{
+	top: 10vh;
+	height: 90vh;
+	width: 100%;
+	background-image: url(../images/01.png);
+	background-position: center;
+	background-size: cover;
+	position: absolute;
+}
+.menu_list_container{
+	top: 19vh;
+	left: 0;
+	width: 15%;
+	height: 81vh;
+	background: rgba(128, 128, 128, 0.2);
+	position: absolute;
+}
+.mail_list_container{
+	top: 19vh;
+	left: 15%;
+	width: 25%;
+	height: 81vh;
+	background: rgba(128, 128, 128, 0.1);
+	position: absolute;
+	overflow: auto;
+}
+.mail_container{
+	top: 10vh;
+	left: 40%;
+	width: 60%;
+	height: 90vh;
+	position: absolute;
+}
+.mail_heading{
+	width: 96%;
+	height: auto;
+	font-weight: bold;
+	font-size: 25px;
+	color: rgba(0,0,0,0.8);
+	position: relative;
+	padding-left: 2%;
+	padding-right: 2%;
+	padding-top: 2%;
+	padding-bottom: 1%;
+}
+.options_menu{
+	top: 10vh;
+	width: 40%;
+	height: 9vh;
+	background: rgba(255,255,255,1);
+	position: relative;
+	z-index: +1;
+}
+.submit_btn{
+	top: 2vh;
+	font-weight: bold;
+	color: white;
+	left: 7.5%;
+	background: #0078d4;
+	cursor: pointer;
+	padding: 1.5vh 3vw;
+	position: relative;
+	border: 0;
+	outline: none;
+	border-radius: 5px;
+}
+.mail_box_container{
+	width: 100%;
+	height: auto;
+	max-height: 81vh !important;
+	overflow: auto overlay;
+	}
+.mail_box{
+	margin: 1%;
+	padding-left: 5%;
+	padding-right: 5%;
+	padding-bottom: 5%;
+	word-wrap: break-word;
+	padding-top: 1%;
+	height: auto;
+	width: 87%;
+	background: white;
+	border-style: solid;
+	border-color: rgba(128, 128, 128, 0.3);
+	border-width: 1px;
+	position: retative;
+}
+.mail_type_select{
+	width: 90%;
+	margin: 2vh;
+	float: left;
+	padding: 1.5vh;
+	position: relative;
+	border: 0;
+	outline: none;
+	cursor: pointer;
+	background: transparent;
+	font-size: 15px;
+	z-index: +1;
+}
+.settings:hover{
+	background-color: #005a9e;}
+.open_mail:hover{
+	background-color: rgba(128, 128, 128, 0.2);}
+.selector{
+	width: 100%;
+	height: 9.6vh;
+	background: #c7e0f4;
+	position: absolute;
+	top: 0;
+	transition: 0;
+}
+#selector{
+	height: 81px !important; 
+	top: -100;
+}
+.open_mail{
+	padding: 0, 0, 12px;
+	height: 81px;
+	border-style: solid;
+	border-color: rgba(128, 128, 128, 0.3);
+	border-width: 1px;
+	border-top: none;
+	border-left: none;
+	border-right: none;
+	position: relative;
+	z-index: +1;
+	}
+.select{
+    	width: 2.3vw;
+    	height: 2.3vh;
+    	cursor: pointer;
+	position: relative;
+	margin: 6% 4% 0 4%;
+	float: left;
+}
+.sender_name{
+	padding: 9px 0 0;
+	position: relative;
+	float: right;
+	width: 82%;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	}
+.subject_line{
+	padding: 9px 0 0;
+	position: relative;
+	float: right;
+	width: 82%;
+	height: 20px;
+	color: #3f3d3d;
+	white-space: pre;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	}
+.body_line{
+	padding: 0 0 9px;
+	position: relative;
+	float: right;
+	height: 10px;
+	width: 82%;
+	color: #3f3d3d;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	}
+#head{
+	left: 36% !important;
+	margin: 4% 4% 0 4%;
+	position: absolute;
+}
+.name{
+	position: relative;
+	top: 2vh;
+	left: 5vw;
+	margin: 0 3vw;
+}
+#head_btn{
+	position: relative;
+	float: right;
+	margin: 0 7vw 0 0;
+}
+.heading1{
+	margin: 2.5vh 0 0 2vw;
+	color: white;
+	float: left;
+    	position: relative;
+}
+.settings{
+	top: 0;
+	color: white;
+	padding: 3.5vh 5vw 3.6vh 5vw;
+	position: relative;
+	float: right;
+}
+.sender{
+	width: 100%;
+	height: auto;
+	font-size: 20px;
+	color: rgba(0,0,0,0.8);
+	position: relative;
+	}
+.time{
+	width: 100%;
+	height: auto;
+	font-size: 15px;
+	color: rgba(0,0,0,0.8);
+	position: relative;
+	padding-bottom: 2%;
+}
+.body{
+	width: 100%;
+	height: auto;
+	font-size: 15px;
+	color: rgba(0,0,0,0.8);
+	position: relative;
+}
+.input-field{
+	width: 100%;
+	padding: 10px 0;
+	margin: 5px auto;
+	border-left: 0;
+	border-right: 0;
+	border-top: 0;
+	border-bottom: 1px solid #999;
+	outline: none;
+	background: transparent;
+}
+#submit{
+	left: 0;
+}
+#comp_container{
+	max-height: 90vh !important;
+}
+.mail-body{
+	width: 100%;
+	height: 65%;
+	border-left: 0;
+	border-right: 0;
+	border-top: 0;
+	margin: 5px auto;
+	border-bottom: 1px solid #999;
+	outline: none;
+	background: transparent;
+	resize: none;
+}
